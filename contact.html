@@ -20,7 +20,7 @@
               <ul>
                 <div id="mobile-nav">
                 <span id="logo">
-                <li><a class="logo" href="index.html"><img src="img/logos/black-logo.png"></a></li> 
+                <li><a class="logo" href="index.html"><img src="img/logos/black-logo.svg"></a></li> 
                 </span>
                 <span id="mobile-icon"> 
                   <button id="menu-button" class="hamburger hamburger--slider " type="button">
@@ -39,29 +39,71 @@
               </ul>
            </nav> 
 
-           <div id="header">
-              <div class="container-fluid">
-                <h1>Contact</h1>
-              </div>
-            </div>  
-
-            <div id="contact">
-              <div class="containter-fluid">
-                <div class="col-md-3">
-                  <ul>
-                    <li><span><i class="fa fa-phone-square" aria-hidden="true"></i></span><span><i class="fa fa-mobile" aria-hidden="true"></i></span> 027 000 0000</li> 
-                    <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span> email@email.com</li>
-                  </ul>
-                </div> 
-
-                <div class="col-md-9">
-                  <form id="contact-form" method="post" action="post.php">
-                    
-                  </form>
-                </div>
-              </div>
+           <div class="header">
+            <div class="container-fluid">
+              <h1>
+                Let's
+                <span class="desktop"> Start Talking</span> 
+                <span class="tablet mobile"> Chat</span>
+              </h1>  
+              <div class="header-border"></div>
             </div>
+           </div> 
 
+           <div class="container-fluid">
+            <div class="col-md-4">
+              <ul>
+                <li>
+                  <span class="tablet mobile"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                  <span class="desktop"><i class="fa fa-phone-square" aria-hidden="true"></i></span> 
+                  +6427 309 1105
+                </li>
+                <li>Email</li>
+              </ul>
+            </div> 
+            <div class="col-md-8">
+              <form>
+                <div>
+                  <div>
+                    <label for="first-name">Name</label> 
+                  </div>
+                  <div class="col-md-6 name-input">
+                    <input type="text" id="first-name" placeholder="First Name">
+                  </div> 
+                  <div class="col-md-6 name-input last">
+                    <input type="text" id="first-name" placeholder="Last Name"> 
+                  </div>
+                </div> 
+                <div>
+                  <div>
+                    <label for="email">Email</label> 
+                  </div> 
+                  <div>
+                    <input type="email" id="email" placeholder="Email address"> 
+                  </div>
+                </div> 
+                <div>
+                  <div>
+                   <label for="phone">Phone Number</label>
+                  </div> 
+                  <div>
+                    <input type="tel" id="phone" placeholder="Your Phone number">
+                  </div>
+                </div> 
+                <div>
+                  <div>
+                    <label for="message">Message</label>
+                  </div>  
+                  <div>
+                    <textarea id="message" rows="3" placeholder="Dear Caleb, I think you're awesome..."></textarea> 
+                  </div>
+                </div> 
+                <div>
+                  <input type="submit" value="Send Message">
+                </div>
+              </form>
+            </div>
+           </div>
 
 
 

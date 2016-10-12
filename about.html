@@ -21,7 +21,7 @@
            		<ul>
            			<div id="mobile-nav">
                 <span id="logo">
-                <li><a class="logo" href="index.html"><img src="img/logos/black-logo.png"></a></li> 
+                <li><a class="logo" href="index.html"><img src="img/logos/black-logo.svg"></a></li> 
            			</span>
                 <span id="mobile-icon"> 
                   <button id="menu-button" class="hamburger hamburger--slider " type="button">
@@ -41,9 +41,10 @@
            </nav> 
            
            
-            <div id="header">
+            <div class="header">
               <div class="container-fluid">
-                <h1>About Me</h1>
+                <h1>About <span class="desktop tablet">Me</span></h1> 
+                <div class="header-border"></div>
               </div>
             </div> 
             
@@ -109,8 +110,8 @@
               <li>HMTL5</li> 
               <li>CSS3</li> 
               <li>JavaScript</li>
-              <li>Bootstrap</li>
               <li>Responsive Web Design</li>
+              <li>Bootstrap</li>
               <li>Git</li>
               <li>jQuery</li> 
               <li>AJAX</li>
@@ -125,14 +126,30 @@
             </ul>
            </div> 
 
-           <div class="container">
-            <div id="about-buttons">
-              <span class="btn-sapce">
-                <a class="btn btn-default" href="#" role="button">View my CV</a>
-              </span>
-              <span class="btn-sapce">
-                <a class="btn btn-default" href="contact.html" role="button">Get in Touch</a>
-              </span>
+           <div>
+            <div class="container buttons">
+              
+              <a href="">
+                <div id="view-cv" class="about-button">
+                  <i class="fa fa-file-text" aria-hidden="true"></i> 
+                  <p>View my CV</p> 
+                </div> 
+              </a>
+              
+              <a href="contact.html">  
+                <div id="contact-button" class="about-button">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <p>Get in Touch</p> 
+                </div> 
+              </a>
+
+              <a href="https://github.com/calebgibbs" target="_blank">
+                <div id="github-button" class="about-button mobile">
+                  <i class="fa fa-github" aria-hidden="true"></i> 
+                  <p>View Me on GitHub</p>     
+                </div>
+              </a> 
+
             </div>
            </div>
 
