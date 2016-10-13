@@ -51,55 +51,55 @@
            </div> 
 
            <div class="container-fluid">
-            <div class="col-md-4">
+            <div class="col-md-3 contact-info" >
               <ul>
                 <li>
                   <span class="tablet mobile"><i class="fa fa-mobile" aria-hidden="true"></i></span>
                   <span class="desktop"><i class="fa fa-phone-square" aria-hidden="true"></i></span> 
-                  +6427 309 1105
+                  <p>+6427 3091 105</p>
                 </li>
-                <li>Email</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i><p>calebgibbs@me.com</p></li>
               </ul>
-            </div> 
-            <div class="col-md-8">
-              <form>
+            </div>
+
+            <div class="col-md-9">
+              <form action="#" method="post">
                 <div>
-                  <div>
-                    <label for="first-name">Name</label> 
-                  </div>
+                  <label for="first-name">Name</label>
+                </div> 
+                <div>
                   <div class="col-md-6 name-input">
-                    <input type="text" id="first-name" placeholder="First Name">
+                    <input id="first-name" type="text" placeholder="First Name"> 
+                    <span id="first-name-message"></span> 
                   </div> 
-                  <div class="col-md-6 name-input last">
-                    <input type="text" id="first-name" placeholder="Last Name"> 
+                  <div class="col-md-6 name-input">
+                    <input id="last-name" type="text" placeholder="Last Name"> 
+                    <span id="last-name-message"></span>
                   </div>
                 </div> 
-                <div>
-                  <div>
-                    <label for="email">Email</label> 
-                  </div> 
-                  <div>
-                    <input type="email" id="email" placeholder="Email address"> 
-                  </div>
+                <div id="email-label">
+                  <label for="email">Email</label>
                 </div> 
                 <div>
-                  <div>
-                   <label for="phone">Phone Number</label>
-                  </div> 
-                  <div>
-                    <input type="tel" id="phone" placeholder="Your Phone number">
-                  </div>
+                  <input id="email" type="email" placeholder="Email"> 
+                  <span id="email-message"></span>
                 </div> 
                 <div>
-                  <div>
-                    <label for="message">Message</label>
-                  </div>  
-                  <div>
-                    <textarea id="message" rows="3" placeholder="Dear Caleb, I think you're awesome..."></textarea> 
-                  </div>
+                  <label for="phone">Phone Number</label> 
                 </div> 
                 <div>
-                  <input type="submit" value="Send Message">
+                  <input id="phone" type="tel" placeholder="Phone Number"> 
+                  <span id="phone-message"></span>
+                </div> 
+                <div>
+                  <label for="message">Message</label>
+                </div> 
+                <div>
+                  <textarea id="message" rows="5" placeholder="Message"></textarea> 
+                  <span id="message-message"></span>
+                </div> 
+                <div>
+                  <button type="submit">Send</button>
                 </div>
               </form>
             </div>
@@ -129,7 +129,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script>  
 <script type="text/javascript" src="js/animation.js"></script> 
-<script type="text/javascript" src="js/mobile-menu.js"></script> 
-<script type="text/javascript" src="js/formValidation.js"></script>
+<script type="text/javascript" src="js/mobile-menu.js"></script>  
+<script type="text/javascript" src="js/validation.js"></script>
 </body>  
 </html>
