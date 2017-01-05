@@ -16,7 +16,6 @@ html, body {
 }  
 
 .footer { 
-	
 } 
 
 .container { 
@@ -79,7 +78,13 @@ nav li a {
 .about-button:hover { 
   border: 2px solid #666666; 
   color: #666666;
-}  
+}   
+
+.contact-info{ 
+  width: 80%; 
+  margin: 0 auto; 
+  text-align: center;
+}
 
 .contact-info ul { 
   padding: 0; 
@@ -89,6 +94,15 @@ nav li a {
 .contact-info p { 
   display: inline-block; 
   padding-left: 5px;
+} 
+
+.contact-info li { 
+  display: inline-block; 
+  float: center;
+} 
+
+.contact-info li:first-of-type { 
+  padding-right: 200px;
 }
 
 form { 
@@ -127,6 +141,11 @@ form input {
 
 .name-input:first-of-type { 
   padding-right: 10px;
+} 
+
+#contact-form { 
+  width: 80%; 
+  margin: 0 auto;
 }
 
 form textarea { 
@@ -360,17 +379,31 @@ form button:hover {
   }  
   
   .project-outer:hover { 
-    background-color: #fff;
+    background-color: #fff; 
+        -webkit-transition: background-color 300ms linear;
+        -moz-transition: background-color 300ms linear;
+        -o-transition: background-color 300ms linear;
+        -ms-transition: background-color 300ms linear;
+        transition: background-color 300ms linear;
   }
 
   .project { 
-    padding: 10px;
-  } 
+    padding: 0px; 
+    text-align: center;
+  }  
+
+  .project h3 { 
+    text-align: center; 
+    text-transform: uppercase;
+  }
 
   .project img { 
-    display: center; 
-    width: 200px; 
-    text-align: center;
+    margin:auto; 
+    position:absolute; 
+    bottom:0; 
+    left:0;right:0; 
+    min-width: 57%; 
+    max-width: 57%;  
   }
 
 }
