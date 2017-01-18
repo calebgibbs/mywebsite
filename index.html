@@ -10,17 +10,40 @@
   <link rel="icon" href="img/logos/black-logo.png">
 	<link rel="stylesheet" href="css/bootstrap.css"> 
   <link rel="stylesheet" type="text/css" href="css/hamburger.css">
-	<link rel="stylesheet" href="css/style.css">    
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">    
 </head> 
-<body>
-	
+<body> 
+
+  <!-- SLIDER -->
+  
+  <div id="slide-window">
+  
+    <ol id="slides" start="1">
+    
+      <li class="slide color-0 alive" id="slide1"></li>
+      
+      <li class="slide color-1" id="slide2"></li>
+      
+      
+    
+    </ol>
+ 
+ 
+    
+    
+    
+</div> 
+
+<!-- SLIDER -->
+<div id="content">
 <div class="wrapper">
         <div id="content">
-           <nav>
+           <nav class="home-nav">
            		<ul>
            			<div id="mobile-nav">
                 <span id="logo">
-                <li><a class="logo" href="index.html"><img src="img/logos/black-logo.png"></a></li> 
+                <li><a class="logo" href="index.html"><img src="img/logos/white-logo.png"></a></li> 
            			</span>
                 <span id="mobile-icon"> 
                   <button id="menu-button" class="hamburger hamburger--slider " type="button">
@@ -30,15 +53,19 @@
                   </button>
            			</span> 
                 </div>
-           			<div id="list-items" class="menu-close">
-           			<li><a class="current-page" href="index.html">Home</a></li>
-           			<li><a href="about.html">About</a></li> 
-           			<li><a href="work.html">Work</a></li>
-           			<li><a href="contact.html">Contact</a></li> 
-           			</div>
+           			<div id="list-items" class="menu-close"> 
+                  <div id="home-list-items">
+               			<li><a class="home-page" href="index.html">Home</a></li>
+               			<li><a href="about.html">About</a></li> 
+               			<li><a href="work.html">Work</a></li>
+               			<li><a href="contact.html">Contact</a></li> 
+           			  </div> 
+                </div>
            		</ul>
            </nav> 
 
+              <span class="nav fa fa-chevron-left fa-3x" id="left"></span>
+    <span class="nav fa fa-chevron-right fa-3x" id="right"></span>
 
 
 
@@ -47,23 +74,22 @@
         <div class="push"></div>
     </div>
 
-<footer class="footer"> 
+<footer class="footer home-footer"> 
   <div class="container-fluid">
     <span class="footer-left">
       &copy; 2016 <span class="hidden-mobile">Caleb Gibbs web development</span> 
     </span> 
-    <span class="footer-right hidden-mobile">
-      <a href="https://github.com/calebgibbs" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> 
-      <a href="#" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-    </span>
+    
   </div>
        
       
-</footer>
+</footer> 
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script>  
 <script type="text/javascript" src="js/animation.js"></script> 
-<script type="text/javascript" src="js/mobile-menu.js"></script>
+<script type="text/javascript" src="js/mobile-menu.js"></script> 
+<script type="text/javascript" src="js/slider.js"></script>
 </body>  
 </html>
